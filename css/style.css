@@ -43,3 +43,9 @@
   padding: 60px 30px; }
   .about-skills span {
     font-size: 35px; }
+
+.experience {
+  background-color: #222; }
+  .experience h2 {
+    color: #ffc600;
+    padding: 60px 0px 20px; }

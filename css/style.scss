@@ -2,6 +2,7 @@
 @import "icomoon.css";
 $orange: #ffc600;
 $light-gray: #f8f8f8;
+$dark-gray: #222;
 .container-fluid-hello{
     background-image: url("../img/hello.jpg");
     background-size: cover;
@@ -55,5 +56,12 @@ $light-gray: #f8f8f8;
         span{
             font-size: 35px;
         }
+    }
+}
+.experience{
+    background-color: $dark-gray;
+    h2{
+        color: $orange;
+        padding: 60px 0px 20px;
     }
 }
