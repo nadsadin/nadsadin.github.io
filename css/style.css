@@ -1,0 +1,19 @@
+.container-fluid-hello{
+    background-image: url("../img/hello.jpg");
+    background-size: cover;
+    min-height: 500px;
+}
+.hello-world{
+    width: 50%;
+    margin-left: 50%;
+    padding-top: 100px;
+}
+.job{
+    background-color: #8a8a8a;
+    color: #ffc600;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    box-shadow: 4px 4px 3px #ffc600;
+}
