@@ -45,7 +45,8 @@
     font-size: 35px; }
 
 .experience {
-  background-color: #222; }
+  background-color: #222;
+  padding-bottom: 40px; }
   .experience h2 {
     color: #ffc600;
     padding: 60px 0px 20px; }
