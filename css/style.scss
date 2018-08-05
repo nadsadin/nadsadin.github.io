@@ -1,68 +1,148 @@
 @import "bootstrap.min.css";
+@import "fonts";
 @import "icomoon.css";
-$orange: #ffc600;
+$orange: #FFA600;
 $light-gray: #f8f8f8;
-$dark-gray: #222;
-.container-fluid-hello{
-    background-image: url("../img/hello.jpg");
-    background-size: cover;
-    min-height: 500px;
-}
-.hello-world{
-    width: 50%;
-    margin-left: 50%;
-    padding-top: 100px;
-    p{
-        margin: 10px;
-        &.h1{
-            font-size: 3rem;
-        }
-        &.h2{
-            font-size: 2.5rem;
-        }
+$dark-gray: #444;
+body{
+    font-family: Montserrat, "Helvetica Neue", Arial ,sans-serif;
+    a{
+        text-decoration: none;
     }
-    .job{
-        background-color: #8a8a8a;
-        color: #ffc600;
-        padding: 5px 10px;
-        font-size: 20px;
-        font-weight: 500;
-        display: inline-block;
-        box-shadow: 4px 4px 3px $orange;
-        font-style: italic;
-    }
-}
-.about{
-    h2{
-        text-align: center;
-        font-size: 32px;
-        padding: 15px 5px 10px;
-    }
-    &-me{
-        padding-top: 60px;
-        h3{
-            border-left: 3px solid $orange;
-            padding: 10px;
-        }
-        p{
-            padding-left: 10px;
-            font-size: 18px;
-            font-style: italic;
+    .section-intro{
+        background-image: url("../img/hello1.jpg");
+        background-size: cover;
+        min-height: 500px;
+        padding-top: 200px;
+        position: relative;
+        z-index: 1;
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+            z-index: -1;
+            background: #fff;
         }
     }
-    &-skills{
-        background-color: $light-gray;
-        padding: 60px 30px;
-        span{
-            font-size: 35px;
-        }
-    }
-}
-.experience{
-    background-color: $dark-gray;
-    padding-bottom: 40px;
-    h2{
+    .text-orange{
         color: $orange;
-        padding: 60px 0px 20px;
+    }
+    .intro{
+        margin-top: 100px;
+        text-align: center;
+        background-color: #fff;
+        padding: 0 20px;
+        border-radius: 15px;
+        .profile-img{
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            top: -100px;
+            margin-bottom: -70px;
+            img{
+                width: 100%;
+            }
+        }
+        .social-icons{
+            padding: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+                &>a{
+                    height: 35px;
+                    line-height: 35px;
+                    width: 35px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    z-index: 1;
+                    position: relative;
+                    margin: 0 5px 5px;
+                    background: $dark-gray;
+                    color: #fff;
+                    display: inline-block;
+                    -webkit-transition: all .25s ease-in-out;
+                    transition: all .25s ease-in-out;
+                    &:hover{
+                        text-decoration: none;
+                        background-color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        padding-bottom: 30px;
+        h2{
+            text-align: center;
+            font-size: 32px;
+            padding: 15px 5px 10px;
+        }
+        &-header{
+            padding-top: 60px;
+            .header:before{
+                content: '';
+                height: 10px;
+                width: 50px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                display: block;
+                background: $orange;
+            }
+            p{
+                padding-left: 10px;
+                font-size: 18px;
+                font-style: italic;
+            }
+        }
+        &-me{
+            padding-top: 70px;
+        }
+        &-skills{
+            background-color: $light-gray;
+            padding: 50px 30px 10px;
+            border-radius: 10px;
+
+            span{
+                font-size: 35px;
+            }
+        }
+    }
+    .experience{
+        background-color: $dark-gray;
+        padding-bottom: 40px;
+        h2{
+            color: $orange;
+            padding: 60px 0 20px;
+        }
+    }
+    .portfolio{
+        padding-top: 30px;
+        div[class^="col"]{
+            margin: 20px 0;
+        }
+        .header:before{
+            content: '';
+            height: 10px;
+            width: 50px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: block;
+            background: $orange;
+        }
+        a{
+            color: $orange;
+        }
+    }
+    .footer{
+        background-color: $dark-gray;
+        color: $light-gray;
+        text-align: center;
+        padding: 15px;
     }
 }

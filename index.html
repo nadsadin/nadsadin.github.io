@@ -11,61 +11,89 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<div class="container-fluid container-fluid-hello text-white">
+<section class="section-intro">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">GitHub Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Contact</a></li>
-                </ul>
+        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">-->
+            <!--<a class="navbar-brand" href="#">GitHub Portfolio</a>-->
+            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+                <!--<span class="navbar-toggler-icon"></span>-->
+            <!--</button>-->
+            <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+                <!--<ul class="navbar-nav ml-auto mt-2 mt-lg-0">-->
+                    <!--<li class="nav-item"><a href="javascript:void(0);" class="nav-link">About</a></li>-->
+                    <!--<li class="nav-item"><a href="javascript:void(0);" class="nav-link">Experience</a></li>-->
+                    <!--<li class="nav-item"><a href="javascript:void(0);" class="nav-link">Portfolio</a></li>-->
+                    <!--<li class="nav-item"><a href="javascript:void(0);" class="nav-link">Contact</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="intro">
+                    <div class="profile-img">
+                        <img src="img/profile-image.png" alt="">
+                    </div>
+                    <h2><b>Dmitry Nadsadin</b></h2>
+                    <h4 class="text-orange">Full Stack Web Developer</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://github.com/nadsadin/"><i class="icon-github"></i></a></li>
+                        <li><a href="https://vk.com/cheshire_code"><i class="icon-vk"></i></a></li>
+                        <li><a href="https://t.me/cheshire_code"><i class="icon-paper-plane"></i></a></li>
+                        <li><a href="mailto:leloushlampergh@gmail.com"><i class="icon-envelope"></i></a></li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+        </div>
     </div>
-    <div class="hello-world">
-        <p class="h2">Hello, world!</p>
-        <p class="h1">This is Dmitry Nadsadin</p>
-        <p class="job">I am Full Stack Web Developer.</p>
-    </div>
-</div>
+</section>
 <div class="container about">
     <div class="row">
-        <div class="col-lg-6 about-me">
-            <h3>My Skills</h3>
+        <div class="col-lg-4 about-header">
+            <div class="header">
+                <h3>My Skills</h3>
+            </div>
+        </div>
+        <div class="col-lg-8 about-me">
             <p>Hello! I'm Dmitry Nadsadin. I have more than 4 years experience in web development. I love to handle challenging & creative works. Well known and experienced in popular programming languages, frameworks and technologies including PHP, Ajax, jQuery, HTML5 and CSS3, SASS and Coffee Script, WordPress, Ruby on Rails, PostgreSQL, MySQL, Nginx.</p>
         </div>
-        <div class="col-lg-6 about-skills">
-            <div class="row">
-                <div class="col-auto">
-                    <span class="icon-ruby"></span>
-                </div>
-                <div class="col">
-                    <h3>Ruby on Rails</h3>
-                    <p>More than one year of developing with Ruby on Rails including Bootstrap, SASS, Coffee Script. Experience in using WebRTC for website with online video chat. </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-auto">
-                    <span class="icon-wordpress"></span>
-                </div>
-                <div class="col">
-                    <h3>WordPress</h3>
-                    <p>A lot of experience in a full stack development of websites using WordPress including creating an HTML layout with Bootstrap and adaptation existing layout to WordPress, creating WordPress plugins and widgets.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card about-skills h-100">
+                <div class="row">
+                    <div class="col-auto">
+                        <span class="icon-ruby"></span>
+                    </div>
+                    <div class="col">
+                        <h3>Ruby on Rails</h3>
+                        <p>More than one year of developing with Ruby on Rails including Bootstrap, SASS, Coffee Script. Experience in using WebRTC for website with online video chat. </p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-auto">
-                    <span class="icon-html5"></span>
+        </div>
+        <div class="col-md-4">
+            <div class="card about-skills h-100">
+                <div class="row">
+                    <div class="col-auto">
+                        <span class="icon-wordpress"></span>
+                    </div>
+                    <div class="col">
+                        <h3>WordPress</h3>
+                        <p>A lot of experience in a full stack development of websites using WordPress including creating an HTML layout with Bootstrap and adaptation existing layout to WordPress, creating WordPress plugins and widgets.</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <h3>Raw code</h3>
-                    <p>Experience in projects with raw PHP, HTML, CSS, Javascript, jQuery and Ajax.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card about-skills h-100">
+                <div class="row">
+                    <div class="col-auto">
+                        <span class="icon-html5"></span>
+                    </div>
+                    <div class="col">
+                        <h3>Plain code</h3>
+                        <p>Experience in projects with plain PHP, HTML, CSS, Javascript, jQuery and Ajax.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,14 +108,14 @@
                     <div class="col-6 time text-secondary h1">2013-2014</div>
                     <div class="col-6">
                         <p class="text-white">Information Management System and Technologies</p>
-                        <p class="text-secondary">Volodymyr Dahl East Ukrainian National University</p>
+                        <p class="text-orange">Volodymyr Dahl East Ukrainian National University</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6 time text-secondary h1">2009-2013</div>
                     <div class="col-6">
                         <p class="text-white">Computer Science</p>
-                        <p class="text-secondary">Volodymyr Dahl East Ukrainian National University</p>
+                        <p class="text-orange">Volodymyr Dahl East Ukrainian National University</p>
                     </div>
                 </div>
             </div>
@@ -97,19 +125,126 @@
                     <div class="col-6 time text-secondary h1">2017-2018</div>
                     <div class="col-6">
                         <p class="text-white">Rate Date</p>
-                        <p class="text-secondary">Full Stack Ruby on Rails Developer</p>
+                        <p class="text-orange">Full Stack Ruby on Rails Developer</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6 time text-secondary h1">2014-2017</div>
                     <div class="col-6">
                         <p class="text-white">A State of Art web studio</p>
-                        <p class="text-secondary">Full Stack Web Developer</p>
+                        <p class="text-orange">Full Stack Web Developer</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="container portfolio">
+    <div class="header">
+        <h3>Portfolio</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/ratedate-1.jpg" alt="Rate Date" class="card-img-top">
+                <div class="card-body">
+                    <a href="https://github.com/ratedate/ratedate"><h5 class="card-title">Rate Date</h5></a>
+                    <p class="card-text">The website for online video date auctions with video chat.</p>
+                    <span class="badge badge-secondary">Ruby on Rails</span>
+                    <span class="badge badge-secondary">Javascript</span>
+                    <span class="badge badge-secondary">Postgresql</span>
+                    <span class="badge badge-secondary">WebRTC</span>
+                    <span class="badge badge-secondary">Redis</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/paintapot-1.jpg" alt="Paint a Pot" class="card-img-top">
+                <div class="card-body">
+                    <a href="http://paintapot.ca"><h5 class="card-title">Paint a Pot</h5></a>
+                    <p class="card-text">The website for kid entertainment center in Newmarket. Build with WordPress.</p>
+                    <span class="badge badge-secondary">WordPress</span>
+                    <span class="badge badge-secondary">PHP</span>
+                    <span class="badge badge-secondary">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/laserplay-1.jpg" alt="Laser Play" class="card-img-top">
+                <div class="card-body">
+                    <a href="http://newmarketlasertag.com"><h5 class="card-title">Laser Play</h5></a>
+                    <p class="card-text">The website for kid and adult entertainment center with lasertag in Newmarket.</p>
+                    <span class="badge badge-secondary">WordPress</span>
+                    <span class="badge badge-secondary">PHP</span>
+                    <span class="badge badge-secondary">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/laserlounge-1.jpg" alt="Laser Lounge" class="card-img-top">
+                <div class="card-body">
+                    <a href="http://laserlounge.ca"><h5 class="card-title">Laser Lounge</h5></a>
+                    <p class="card-text">The website for adult bar in entertainment laser tag center in Newmarket.</p>
+                    <span class="badge badge-secondary">WordPress</span>
+                    <span class="badge badge-secondary">PHP</span>
+                    <span class="badge badge-secondary">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/nerf-1.jpg" alt="Nerf Wars" class="card-img-top">
+                <div class="card-body">
+                    <a href="https://github.com/nadsadin/nerf-wars"><h5 class="card-title">Nerf Wars</h5></a>
+                    <p class="card-text">The php application with online game statistic for Nerf Wars game.</p>
+                    <span class="badge badge-secondary">PHP</span>
+                    <span class="badge badge-secondary">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/teenparties-1.jpg" alt="Teen Parties" class="card-img-top">
+                <div class="card-body">
+                    <a href="http://teenparties.ca"><h5 class="card-title">Teen Parties</h5></a>
+                    <p class="card-text">The website for kid and teen parties venue in Newmarket.</p>
+                    <span class="badge badge-secondary">WordPress</span>
+                    <span class="badge badge-secondary">PHP</span>
+                    <span class="badge badge-secondary">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/paz-1.jpg" alt="Paz Property Services" class="card-img-top">
+                <div class="card-body">
+                    <a href="http://pazpropertyservices.com"><h5 class="card-title">Paz Property Services</h5></a>
+                    <p class="card-text">The website for the constructor company in Toronto.</p>
+                    <span class="badge badge-secondary">WordPress</span>
+                    <span class="badge badge-secondary">PHP</span>
+                    <span class="badge badge-secondary">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="img/raduga-1.jpg" alt="Raduga Toronto" class="card-img-top">
+                <div class="card-body">
+                    <a href="http://radugatoronto.com"><h5 class="card-title">Raduga Toronto</h5></a>
+                    <p class="card-text">The website for russians in Toronto.</p>
+                    <span class="badge badge-secondary">WordPress</span>
+                    <span class="badge badge-secondary">PHP</span>
+                    <span class="badge badge-secondary">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer">
+    <small>All rights reserved. Nadsadin Dmitry 2018.</small>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
